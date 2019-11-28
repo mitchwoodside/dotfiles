@@ -1,0 +1,80 @@
+/*
+ * Your Stylesheet
+ *
+ * This stylesheet is loaded when Atom starts up and is reloaded automatically
+ * when it is changed and saved.
+ *
+ * Add your own CSS or Less to fully customize Atom.
+ * If you are unfamiliar with Less, you can read more about it here:
+ * http://lesscss.org
+ */
+//
+// @import (reference) 'colors';
+@import (reference) 'syntax-variables';
+
+
+@qred: #e21b23;
+@funky-green: #00ff00;
+@semi-white: rgba(255,255,255,0.5);
+
+/*
+ * Examples
+ * (To see them, uncomment and save)
+ */
+
+ @workspace-font-size: 0.8rem;
+ @editor-font-weight: 600;
+
+// html,
+// // body,
+// // .tooltip,
+// // .find-and-replace .find-meta-container,
+// // atom-text-editor[mini],
+// // .btn,
+// // .status-bar,
+// // linter-message
+// .tree-view,
+// .tab-bar .tab, {
+//   font-size: @workspace-font-size;
+// }
+
+atom-workspace {
+    font-family: Merriweather;
+    // font-size: 1rem;
+    // color: white;
+    .item-views{
+      // background-color: @syntax-background-color;
+    }
+    .background-message{
+      color: @syntax-text-color;
+    }
+    .tree-view {
+        font-size: @workspace-font-size;
+    }
+    .tab-bar .tab {
+        font-size: @workspace-font-size;
+    }
+}
+
+atom-text-editor {
+  /* show invisibles only in selection */
+  // font-family: Roboto Mono;
+  // font-family: Roboto Mono Medium;
+  // font-weight: @editor-font-weight;
+  .invisible-character {
+      color: @syntax-background-color;
+  }
+}
+
+// style the background color of the tree view
+.tree-view {
+  background-color: @syntax-background-color;
+}
+.editor .cursor {
+  transition: opacity 0.9s;
+  border-left: 2px solid @funky-green;
+  // background-color: rgba(10,10,10,0.5);
+  background-color: rgba(255,255,255,0.5);
+  opacity: 0.4;
+  border: none;
+}
