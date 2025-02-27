@@ -1,0 +1,4 @@
+{
+  "espresso.nvim": { "branch": "main", "commit": "60886bfc98d5db7b5f03c5405d4314487461b55a" },
+  "lazy.nvim": { "branch": "main", "commit": "6c3bda4aca61a13a9c63f1c1d1b16b9d3be90d7a" }
+}
