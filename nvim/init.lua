@@ -8,5 +8,5 @@ require("config.python")
 require("config.lazy")
 
 require("config.telescope")
+require("config.flexoki")
 
-vim.cmd('colorscheme espresso')
