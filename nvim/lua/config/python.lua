@@ -15,10 +15,10 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.opt_local.commentstring = "# %s"
 
     -- Set textwidth to 88 characters (common for Black formatter)
---     vim.opt_local.textwidth = 88
+    -- vim.opt_local.textwidth = 88
 
     -- Display a colored column at textwidth + 1
---     vim.opt_local.colorcolumn = "+1"
+    -- vim.opt_local.colorcolumn = "+1"
 
     -- Add any other Python-specific settings you prefer
   end
