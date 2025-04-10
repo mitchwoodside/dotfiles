@@ -10,4 +10,6 @@ require("config.lazy")
 require("config.telescope")
 require("config.flexoki")
 
+require("lualine").setup()
+
 vim.lsp.enable("lua-language-server")
