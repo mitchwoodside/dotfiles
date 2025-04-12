@@ -2,7 +2,7 @@ return {
   {
     "neovim/nvim-lspconfig",
     config = function()
-      local lspconfig = require("lspconfig")
+      -- local lspconfig = require("lspconfig")
 
       function set_bindings(client, buffer)
         function bufmap(mode, lhs, fn)
@@ -30,14 +30,14 @@ return {
         -- bufmap("v", "<Leader>ca", vim.lsp.buf.range_code_action)
       end
 
-      local flags = { debounce_text_changes = 150 }
-      local servers = { "ruff", "terraformls", "pyright" }
-      for _, server in ipairs(servers) do
-        lspconfig[server].setup({
-          on_attach = set_bindings,
---           flags = flags,
-        })
-      end
+--       local flags = { debounce_text_changes = 150 }
+--       local servers = { "ruff", "terraformls", "pyright" }
+--       for _, server in ipairs(servers) do
+--         lspconfig[server].setup({
+--           on_attach = set_bindings,
+-- --           flags = flags,
+--         })
+--       end
 
     end
   }

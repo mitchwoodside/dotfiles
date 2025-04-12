@@ -8,7 +8,7 @@ require("flexoki").setup({
     },
 
     styles = {
-        bold = true,
+        bold = false,
         italic = false,
     },
 

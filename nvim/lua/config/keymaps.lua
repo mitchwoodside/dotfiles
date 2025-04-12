@@ -1,7 +1,7 @@
 local keymap = vim.keymap.set
 
 -- Clear away junk
-all_clear = function()
+local all_clear = function()
   vim.cmd("noh")
 end
 keymap('n', '<leader>ac', all_clear, {})
