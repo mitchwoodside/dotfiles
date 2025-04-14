@@ -10,11 +10,4 @@ require("config.lazy")
 require("config.telescope")
 require("config.flexoki")
 
-vim.lsp.enable(
-  'ruff',
-  'pyright',
-  'lua-language-server'
-)
-vim.lsp.enable(
-  'pyright'
-)
+vim.lsp.enable({ 'ruff','pyright','lua-language-server' })
