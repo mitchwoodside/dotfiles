@@ -10,9 +10,9 @@ return {
           vim.keymap.set(mode, lhs, fn, { silent = false, buffer = buffer })
         end
 
-	function format()
-	  vim.lsp.buf.format({ async = true })
-	end
+        function format()
+          vim.lsp.buf.format({ async = true })
+        end
 
         vim.api.nvim_buf_set_option(buffer, "omnifunc", "v:lua.vim.lsp.omnifunc")
 
