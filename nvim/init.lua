@@ -16,5 +16,6 @@ vim.lsp.enable({
   'ruff',
   'pyright',
   'lua-language-server',
-  'terraform'
+  'terraform',
+  'gopls'
 })

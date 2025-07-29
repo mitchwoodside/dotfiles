@@ -39,6 +39,16 @@ return {
 
     -- (Default) Only show the documentation popup when manually triggered
     completion = { documentation = { auto_show = false } },
+    -- -- Ensure LSP completions are prioritized
+    -- completion = { 
+    --   documentation = { auto_show = false },
+    --   menu = {
+    --     draw = {
+    --       -- Show source name in completion menu
+    --       columns = { { "label", "label_description", gap = 1 }, { "source_name" } },
+    --     }
+    --   }
+    -- },
 
     -- Default list of enabled providers defined so that you can extend it
     -- elsewhere in your config, without redefining it, due to `opts_extend`
